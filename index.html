@@ -8,6 +8,19 @@
     <!-- Include bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- JavaScript for Jumbotron -->
+	    <script type="text/javascript">
+	    	var jumboHeight = $('.jumbotron').outerHeight();
+			function parallax(){
+			    var scrolled = $(window).scrollTop();
+			    $('.bg').css('height', (jumboHeight-scrolled) + 'px');
+			}
+
+			$(window).scroll(function(e){
+			    parallax();
+			});
+	    </script>
 </head>
 <body>
 <!-- Site header and navigation -->
@@ -37,7 +50,7 @@
     </div>
 <!-- JumboTron -->
 	<div class="bg">
-		<div class="jumbotron" style="background-image: url(img/sfsky.jpg">
+		<div class="jumbotron">
 			<p>...</p>
 		</div>
 	</div>
