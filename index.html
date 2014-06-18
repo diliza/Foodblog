@@ -8,19 +8,8 @@
     <!-- Include bootstrap CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- JavaScript for Jumbotron -->
-	    <script type="text/javascript">
-	    	var jumboHeight = $('.jumbotron').outerHeight();
-			function parallax(){
-			    var scrolled = $(window).scrollTop();
-			    $('.bg').css('height', (jumboHeight-scrolled) + 'px');
-			}
-
-			$(window).scroll(function(e){
-			    parallax();
-			});
-	    </script>
+    // <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
 </head>
 <body>
 <!-- Site header and navigation -->
@@ -45,15 +34,15 @@
     <div class="banner">
         <div class="container">
             <h1>Year Up Bay Area Alumni Association</h1>
-<!--             <p>A comprehensive tutorial showing you how to quickly create responsive designs using Twitter Bootstrap 3.</p>
- -->        </div>
+  
+        </div>
     </div>
 <!-- JumboTron -->
-	<div class="bg">
+	<div class="bg"></div>
 		<div class="jumbotron">
 			<p>...</p>
 		</div>
-	</div>
+	
 	
 <!-- Thumbnails-->
 	<div class="row">
@@ -94,5 +83,17 @@
 <!-- Include jQuery and bootstrap JS plugins -->
 	<script src="includes/jquery/jquery-2.1.0.min.js"></script>
 	<script src="includes/bootstrap/js/bootstrap.min.js"></script>
+<!-- JavaScript for Jumbotron -->
+	    <script type="text/javascript">
+	    	var jumboHeight = $('.jumbotron').outerHeight();
+			function parallax(){
+			    var scrolled = $(window).scrollTop();
+			    $('.bg').css('height', (jumboHeight-scrolled) + 'px');
+			}
+
+			$(window).scroll(function(e){
+			    parallax();
+			});
+	    </script>	
 </body>
 </html>
