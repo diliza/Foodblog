@@ -63,6 +63,19 @@ li {
 .navbar-default .navbar-link:hover {
   color: #110f14;
 }
+#Ukraine{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+#twitter{
+  width: 300px;
+  height: auto;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
